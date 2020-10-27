@@ -97,7 +97,7 @@ function keyPressed(){
     }
 }
 async function getBackgroundImage(){
-var response= await fetch("https://worldclockapi.com/api/json/est/now");
+var response= await fetch("http://worldclockapi.com/api/json/est/now");
 
 var jsonResponse= await response.json();
 var hour=jsonResponse.currentDateTime.slice(11,13);
